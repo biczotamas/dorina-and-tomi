@@ -1,0 +1,75 @@
+#countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+.countdown-item {
+  font-size: 20px;
+  font-family: 'Times New Roman'
+  border-radius: 50%;
+  text-align: center;
+  width:140px;
+  height: 140px;
+  line-height: 140px;
+  position: relative;
+  opacity: 0;
+  margin: 5px;
+}
+
+.countdown-item.show {
+  animation: fadein 2s forwards;
+}
+
+.countdown-item .timeUnit {
+  opacity: .99 !important;
+}
+
+.countdown-item::before {
+  position: absolute;
+  content: ' ';
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #FBCEB1;
+  left: 0;
+  top: 0;
+  opacity: .5;
+}
+
+.countdown-item.days {
+  animation-delay: 1s;
+}
+
+.countdown-item.hours {
+  animation-delay: 1.5s;
+}
+
+.countdown-item.minutes {
+  animation-delay: 2s;
+}
+
+.countdown-item.seconds {
+  animation-delay: 2.5s;
+}
+
+.countdown-item.days::after {
+  content: attr(data-days);
+}
+
+.countdown-item.hours::after {
+  content: attr(data-hours);
+}
+
+.countdown-item.minutes::after {
+  content: attr(data-minutes);
+}
+
+.countdown-item.seconds::after {
+  content: attr(data-seconds);
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

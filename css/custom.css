@@ -1,0 +1,134 @@
+.countdownContainer {
+	font-family: "ConeriaScript";
+	padding: 20px;
+}
+
+.countdownContainer::after {
+  content: "";
+  background: url(../images/close-up-countryside-direction-1711275.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#countdown {
+	font-family: Arial;
+	font-size: 50px;
+	margin-top: 50px;
+}
+
+.person {
+	text-align: center;
+}
+
+.roundedImage {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.infinityContainer {
+	display: block;
+}
+
+.infinityLogo {
+	width: 200px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.locationContainer {
+	background: url(../images/pattern.jpg);
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.mapRight {
+	margin-left: auto;
+	margin-right: 0;
+	padding-right: 0 !important;
+	overflow: hidden;
+}
+
+.mapLeft {
+	margin-left: 0;
+	margin-right: auto;
+	padding-left: 0 !important;
+	overflow: hidden;
+}
+
+.mapRow {
+	color: white;
+}
+
+.dustyRose {
+	background-color: #b87e7e;
+}
+
+.greenery {
+	background-color: #88B04B;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Extra Things */
+body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}
+
+html, body { overflow-x: hidden; }
+
+@media (min-height: 100px) {
+	.countdownContainer {
+    	height: 700px;
+	}
+}
+
+@font-face {
+  font-family: ConeriaScript;
+  src: url(ConeriaScript.ttf);
+}
